@@ -1,0 +1,139 @@
+/* General styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure the body and html occupy full height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Home container */
+.home {
+  flex: 1; /* Allow the content to grow and fill available space */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero Section */
+.hero {
+  flex: 1; /* Make the hero section take up most of the available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, #007bff, #0056b3); /* Add a gradient background */
+  color: white;
+  padding: 20px;
+  min-height: calc(100vh - 60px); /* Ensure Hero takes full height minus navbar and footer */
+  box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.btn {
+  margin: 10px;
+  text-decoration: none; /* Remove underline from links */
+  display: inline-block; /* Make the link behave like a button */
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.hero-content {
+  max-width: 600px; /* Limit the width of the content */
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  position: fixed; /* Fix the footer at the bottom */
+  bottom: 0;
+  width: 100%;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+
+/* Responsive styles */
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* Stack content vertically */
+    padding: 10px;
+    min-height: calc(100vh - 60px); /* Adjust height for smaller screens */
+  }
+
+  .hero-content {
+    max-width: 90%; /* Reduce content width */
+  }
+
+  .profile-img {
+    width: 150px; /* Smaller image */
+    height: 150px;
+  }
+
+  .btn {
+    font-size: 14px; /* Smaller button text */
+    padding: 8px 16px; /* Adjust button padding */
+  }
+}
+
+/* For small phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero {
+    padding: 5px;
+    min-height: calc(100vh - 60px); /* Adjust height for very small screens */
+  }
+
+  .hero-content {
+    max-width: 100%; /* Full width content */
+  }
+
+  .profile-img {
+    width: 120px; /* Even smaller image */
+    height: 120px;
+  }
+
+  .btn {
+    font-size: 12px; /* Smaller button text */
+    padding: 6px 12px; /* Adjust button padding */
+  }
+
+  .footer {
+    font-size: 14px; /* Smaller footer text */
+    padding: 8px 10px;
+  }
+
+  .social-links a {
+    font-size: 16px; /* Smaller social icons */
+  }
+}

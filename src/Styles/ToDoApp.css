@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-app {
+  max-width: 1200px;
+  margin: 150px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.todo-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align input and button vertically */
+  margin-bottom: 20px;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.todo-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-form button:hover {
+  background-color: #0056b3;
+}
+
+.todo-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.todo-column {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-column h2 {
+  margin-bottom: 20px;
+}
+
+.todo-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  min-height: 80px; /* Set a minimum height for the card */
+}
+
+.todo-card.completed p {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px; /* Add consistent spacing between buttons */
+}
+
+.card-actions button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-actions button:first-child {
+  background-color: #ffc107;
+  color: black;
+}
+
+.card-actions button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.card-actions button:hover {
+  opacity: 0.8;
+}
+
+/* Media query for screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+  .todo-app {
+    max-width: 90%; /* Occupy almost the full width of the screen */
+    margin: 150px auto; /* Adjust margins */
+  }
+
+  .todo-columns {
+    flex-direction: column; /* Display columns one below the other */
+    gap: 20px; /* Add spacing between columns */
+  }
+
+  .todo-column {
+    padding: 15px; /* Reduce padding */
+  }
+
+  .todo-form {
+    flex-direction: column; /* Display input and button on separate lines */
+    align-items: center; /* Center align input and button */
+    gap: 10px; /* Add spacing between input and button */
+  }
+
+  .todo-form input {
+    margin-right: 0; /* Remove side margins */
+    width: 100%; /* Input occupies full width */
+  }
+
+  .todo-form button {
+    width: auto; /* Button occupies only as much as its text */
+    align-self: center; /* Ensure center alignment */
+  }
+
+  .todo-card {
+    flex-direction: column; /* Display text and buttons on separate lines */
+    align-items: flex-start; /* Align to the left */
+    min-height: auto; /* Remove minimum height */
+  }
+
+  .card-actions {
+    width: 100%; /* Buttons occupy full width */
+    justify-content: space-between; /* Equal spacing between buttons */
+  }
+
+  .card-actions button {
+    flex: 1; /* Each button occupies equal space */
+    margin: 5px; /* Add spacing between buttons */
+  }
+}
+
+/* Media query for screens smaller than 480px (small phones) */
+@media (max-width: 480px) {
+  .todo-app {
+    margin: 150px auto; /* Reduce margins */
+  }
+
+  .todo-form input {
+    font-size: 14px; /* Reduce font size */
+    padding: 8px; /* Reduce padding */
+  }
+
+  .todo-form button {
+    font-size: 14px; /* Reduce font size */
+    padding: 8px; /* Reduce padding */
+  }
+
+  .todo-card {
+    padding: 10px; /* Reduce padding */
+  }
+
+  .card-actions button {
+    font-size: 12px; /* Reduce font size */
+    padding: 5px; /* Reduce padding */
+  }
+}

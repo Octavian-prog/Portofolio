@@ -21,7 +21,7 @@ body, html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to right, #007bff, #0056b3); /* Add a gradient background */
+  background: linear-gradient(to right, #33ff00, #7100b3); /* Add a gradient background */
   color: white;
   padding: 20px;
   min-height: calc(100vh - 60px); /* Ensure Hero takes full height minus navbar and footer */
@@ -32,8 +32,8 @@ body, html {
   margin: 10px;
   text-decoration: none; /* Remove underline from links */
   display: inline-block; /* Make the link behave like a button */
-  background-color: #007bff; /* Button color */
-  color: white; /* Text color */
+  background: linear-gradient(to right, #33ff00, #7100b3);
+  color:#1f1c1b; /* Text color */
   padding: 10px 20px; /* Padding for the button */
   border: none; /* Remove border */
   border-radius: 5px; /* Rounded corners */
@@ -42,16 +42,37 @@ body, html {
   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
+
+.btn:hover {
+  border-color: #f1ff5c;
+  color: white;
+  box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+  transform: translateY(-0.25em);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+  background: linear-gradient(to right, #33ff00, #7100b3);
+  color: #ffa260; /* Change text color on hover */
+  filter: drop-shadow(0 0.5em 0.5em rgba(0, 0, 0, 0.5)); /* Add shadow effect on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
 .hero-content {
   max-width: 600px; /* Limit the width of the content */
 }
 
 .profile-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px 20px 10px 20px; /* Rounded corners for the image */
   object-fit: cover;
   margin-top: 20px;
+  filter:drop-shadow(30px 0px 17px rgba(2, 27, 54, 0.5)); /* Add shadow effect to the image */
+  transition: filter 0.3s ease; /* Smooth transition for shadow effect */
+}
+.profile-img:hover {
+  transform: scale(1.02); /* Slightly enlarge the image on hover */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
 /* Footer */
@@ -63,6 +84,7 @@ body, html {
   position: fixed; /* Fix the footer at the bottom */
   bottom: 0;
   width: 100%;
+  background: linear-gradient(to right, #33ff00, #7100b3);
 }
 
 .social-links {
@@ -72,14 +94,26 @@ body, html {
   margin-top: 10px;
 }
 
-.social-links a {
+/* .social-links a {
   color: white;
   text-decoration: none;
   font-size: 20px;
-}
+} */
 
-.social-links a:hover {
+/* .social-links a:hover {
   color: #007bff;
+} */
+.linkdin-icon {
+  color: #007bff;
+  background-color: antiquewhite;
+}
+.git-icon {
+  color: #d9e2ec;
+  background-color: rgb(12, 12, 12);
+}
+.insta-icon {
+color:#b300a4;
+background-color:#d9e2ec;
 }
 
 /* Responsive styles */
@@ -97,8 +131,8 @@ body, html {
   }
 
   .profile-img {
-    width: 150px; /* Smaller image */
-    height: 150px;
+    width: 250px; /* Smaller image */
+    height: 250px;
   }
 
   .btn {
@@ -119,8 +153,8 @@ body, html {
   }
 
   .profile-img {
-    width: 120px; /* Even smaller image */
-    height: 120px;
+    width: 180px; /* Even smaller image */
+    height: 180px;
   }
 
   .btn {

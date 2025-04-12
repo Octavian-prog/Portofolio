@@ -29,16 +29,16 @@ const Home = () => {
       <footer className="footer">
         <h3>Contact</h3>
         <div className="social-links">
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+          <a href="www.linkedin.com/in/octavian-ciobanu-b0171b2b3" target="_blank" rel="noreferrer">
             <FaLinkedin size={30} />
           </a>
-          <a href="https://github.com" target="_blank" rel="noreferrer">
+          <a href="https://github.com/Octavian-prog" target="_blank" rel="noreferrer">
             <FaGithub size={30} />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/tavi_cbn?igsh=Z3R3dGJrdG5kYjJi&utm_source=qr" target="_blank" rel="noreferrer">
             <FaInstagram size={30} />
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noreferrer">
+          <a href="https://www.facebook.com/share/18wj7P6sza/?mibextid=wwXIfr" target="_blank" rel="noreferrer">
             <FaFacebook size={30} />
           </a>
           <a href="https://wa.me/1234567890" target="_blank" rel="noreferrer">

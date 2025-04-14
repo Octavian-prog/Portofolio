@@ -21,7 +21,7 @@ body, html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to right, #33ff00, #7100b3); /* Add a gradient background */
+  background: linear-gradient(to right, #71db56, #350d4d); /* Add a gradient background */
   color: white;
   padding: 20px;
   min-height: calc(100vh - 60px); /* Ensure Hero takes full height minus navbar and footer */
@@ -44,13 +44,13 @@ body, html {
 
 
 .btn:hover {
-  border-color: #f1ff5c;
-  color: white;
+  border-color: #bbbda9;
+  color: rgb(255, 255, 255);
   box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
   transform: translateY(-0.25em);
   cursor: pointer;
   transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
-  background: linear-gradient(to right, #33ff00, #7100b3);
+  background: linear-gradient(to right, #33ff00, #8e719e);
   color: #ffa260; /* Change text color on hover */
   filter: drop-shadow(0 0.5em 0.5em rgba(0, 0, 0, 0.5)); /* Add shadow effect on hover */
   transform: scale(1.05); /* Slightly enlarge the button on hover */
@@ -84,7 +84,7 @@ body, html {
   position: fixed; /* Fix the footer at the bottom */
   bottom: 0;
   width: 100%;
-  background: linear-gradient(to right, #33ff00, #7100b3);
+  background: linear-gradient(to right, #33ff00, #9862b8);
 }
 /*  */
 .social-links {
@@ -94,27 +94,16 @@ body, html {
   margin-top: 10px;
 }
 
-/* .social-links a {
+.social-links a {
   color: white;
   text-decoration: none;
   font-size: 20px;
-} */
+} 
 
-/* .social-links a:hover {
+.social-links a:hover {
   color: #007bff;
-} */
-.linkdin-icon {
-  color: #007bff;
-  background-color: antiquewhite;
 }
-.git-icon {
-  color: #d9e2ec;
-  background-color: rgb(12, 12, 12);
-}
-.insta-icon {
-color:#b300a4;
-background-color:#d9e2ec;
-}
+
 
 /* Responsive styles */
 

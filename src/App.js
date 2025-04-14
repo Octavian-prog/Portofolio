@@ -5,7 +5,7 @@ import Counter from "./Components/Counter";
 import Calculator from "./Components/Calculator";
 import ToDoApp from "./Components/ToDoApp";
 import Home from "./Components/Home";
-import Projects from "./Components/Projects"; // Import the Projects component
+import Projects from "./Components/Projects"; 
 import About from "./Components/About";
 
 function App() {

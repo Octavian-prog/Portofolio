@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { evaluate } from 'mathjs';
 import '../Styles/Calculator.css';
-
+// 
 const Calculator = () => {
   const [input, setInput] = useState('');
   const [result, setResult] = useState('');

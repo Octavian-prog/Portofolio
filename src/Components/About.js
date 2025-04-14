@@ -1,7 +1,7 @@
 import React from "react";
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt } from "react-icons/fa"; // Import icons
 import "../Styles/About.css";
-
+// 
 const About = () => {
   return (
     <div className="about">

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa"; // Import icons
 import "../Styles/Home.css";
 import profilImage from "../Image/profil.jpg"; // Corrected path to the image
-
+// 
 const Home = () => {
   return (
     <div className="home">
